@@ -6,7 +6,7 @@ echo "🤖 Instalador del Bot de Enlaces Referidos"
 sudo apt update && sudo apt upgrade -y
 
 # 2. Instalar dependencias
-sudo apt install -y python3.11 python3.11-venv git
+sudo apt install -y python3 python3-venv git  # Usar versión genérica
 
 # 3. Clonar repositorio
 git clone https://github.com/tuusuario/affiliate-bot.git
