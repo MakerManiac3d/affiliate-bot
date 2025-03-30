@@ -1,10 +1,9 @@
 # 🤖 Bot de Enlaces Referidos para Telegram
 
-Bot que sustituye automáticamente enlaces de compra por tus enlaces de afiliado en grupos de Telegram.
-
 ## 🔍 Requisitos Previos
 - **Sistema Operativo**: Ubuntu Server 24.04 LTS
 - **Acceso SSH** al servidor
+- **Git** instalado (se incluyen instrucciones)
 - Cuenta en [GitHub](https://github.com)
 - Token de BotFather ([Cómo obtenerlo](https://core.telegram.org/bots#how-do-i-create-a-bot))
 
@@ -12,14 +11,19 @@ Bot que sustituye automáticamente enlaces de compra por tus enlaces de afiliado
 
 ## 🚀 Instalación Paso a Paso
 
-### 1. Clonar el Repositorio
+### 1. Instalar Git en el Servidor
 ```bash
 # Conéctate a tu servidor vía SSH y ejecuta:
+sudo apt update && sudo apt install -y git
+```
+
+### 2. Clonar el Repositorio
+```bash
 git clone https://github.com/tuusuario/affiliate-bot.git
 cd affiliate-bot/bot
 ```
 
-### 2. Ejecutar el Script de Instalación
+### 3. Ejecutar el Script de Instalación
 ```bash
 # Dar permisos de ejecución
 chmod +x install.sh
@@ -28,7 +32,7 @@ chmod +x install.sh
 sudo ./install.sh
 ```
 
-### 3. Configurar el Bot
+### 4. Configurar el Bot
 Edita el archivo `config.ini` con tus datos:
 ```bash
 nano config.ini
@@ -48,7 +52,7 @@ Amazon_TAG = mitag-20       # Tus códigos de afiliado
 AliExpress_AFF = micodigo123
 ```
 
-### 4. Reiniciar el Servicio
+### 5. Reiniciar el Servicio
 ```bash
 sudo systemctl restart affiliate-bot
 ```
