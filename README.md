@@ -19,7 +19,7 @@ sudo apt update && sudo apt install -y git
 
 ### 2. Clonar el Repositorio
 ```bash
-git clone https://github.com/tuusuario/affiliate-bot.git
+git clone https://github.com/MakerManiac3d/TelegramBot.git
 cd affiliate-bot/bot
 ```
 
